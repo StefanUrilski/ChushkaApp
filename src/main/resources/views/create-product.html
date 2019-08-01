@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <name>Chushka Application</name>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <form action="/products/create" method="post">
+            <h1>Create product</h1>
+            <hr />
+            <label for="enterName">Name:
+                <br/>
+                <input type="text" id="enterName" name="name">
+            </label>
+            <br />
+            <label for="description">Description:
+                <br/>
+                <textarea id="description" name="description"> </textarea>
+            </label>
+            <br />
+            <label for="type"> Type:
+                <br/>
+                <select id="type" name="type">
+                    <option selected disabled>Choose type...</option>
+                    {{typeOptions}}
+                </select>
+            </label>
+            <br />
+            <br />
+            <input class="create" type="submit" value="Create Product">
+
+            <hr />
+            <a href="/">Back to Home page.</a>
+        </form>
+    </center>
+</body>
+</html>

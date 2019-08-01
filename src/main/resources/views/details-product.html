@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <name>Chushka Application</name>
+    <style>
+        body {
+            background-color: #f2f2f2;
+        }
+
+        button {
+            background-color: aqua;
+        }
+
+        form {
+            background-color: lightgray;
+            padding: 25px;
+            width: 75%;
+        }
+
+        a {
+            color: dodgerblue;
+            text-decoration: none;
+        }
+
+        input[type=submit] {
+            margin-bottom: 20px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #086A87;
+            background-color: #0489B1;
+            color: aliceblue;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+<center>
+    <form>
+        <h1>{{productName}}</h1>
+        <hr/>
+        {{productDescription}}
+        <br/>
+        <br/>
+        {{productType}}
+        <hr/>
+        <a href="/">Back to Home page.</a>
+    </form>
+</center>
+</body>
+</html>
